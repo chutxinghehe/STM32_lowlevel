@@ -1,0 +1,33 @@
+# Keil C51 and ARM Compiler outputs
+*.OBJ
+*.obj
+*.lst
+*.m51
+*.map
+*.lnp
+*.plg
+*.htm
+*.build_log.htm
+*.dep
+*._ia
+*.axf
+*.hex
+*.bin
+*.crf
+*.o
+*.d
+*.i
+*.__i
+*.scvd
+*.uvguix.*
+*.uv2.bak
+*.pbi
+*.pbd
+*.browse
+*.pbi-browser
+
+# Keil project local settings
+Mappings/
+Listings/
+Objects/
+RTE/
