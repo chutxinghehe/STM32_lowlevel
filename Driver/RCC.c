@@ -56,3 +56,10 @@ void RCC_Enable_AFIO(void){
 	RCC->APB2ENR.Bits.AFIOEN = 1;
 }
 
+
+void RCC_Enable_TIM2()
+{
+	RCC->APB1ENR.REG |= (1 << 0); 
+}
+
+

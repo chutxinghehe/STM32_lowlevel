@@ -164,4 +164,5 @@ void RCC_Config_72Mhz();
 void RCC_Config_UART();
 void RCC_Enable_AFIO(void);
 
+void RCC_Enable_TIM2();
 #endif

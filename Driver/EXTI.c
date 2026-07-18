@@ -28,7 +28,6 @@ void EXTI0_IRQHandler(void)
 		led_state = !led_state;
 		GPIO_Write(GPIOC, GPIO_PIN_13, led_state);
 		
-		uint8_t pr = EXTI->_PR.REG;
 		EXTI->_PR.REG |= 1;  // Xóa cờ pending
 	}
 }
