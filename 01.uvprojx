@@ -450,6 +450,16 @@
               <FileType>5</FileType>
               <FilePath>.\Driver\TIME.h</FilePath>
             </File>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Driver\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Driver\ADC.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -29,6 +29,7 @@ extern uint8_t blink_state;
 
 void TIME2_Init_IT();
 void TIM2_IRQHandler();
+void delay_ms(uint16_t time);
 
 
 #endif

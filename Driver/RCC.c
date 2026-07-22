@@ -63,3 +63,7 @@ void RCC_Enable_TIM2()
 }
 
 
+void RCC_Enable_ADC1()
+{
+	RCC->APB2ENR.Bits.ADC1EN = 1;
+}

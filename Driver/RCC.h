@@ -161,8 +161,9 @@ void RCC_Enable_PortC();
 void RCC_Enable_intPA0();
 
 void RCC_Config_72Mhz();
+
 void RCC_Config_UART();
 void RCC_Enable_AFIO(void);
-
+void RCC_Enable_ADC1();
 void RCC_Enable_TIM2();
 #endif
