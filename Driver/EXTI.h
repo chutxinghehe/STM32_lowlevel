@@ -30,4 +30,6 @@ void EXTI0_IRQHandler(void);
 void EXTI_Init(uint16_t GPIO_PIN, GPIO_Typedef* Port, uint8_t type);
 uint8_t get_pin_Number(uint16_t gpio_pin);
 
+void EN_NVIC_UART1();
+
 #endif

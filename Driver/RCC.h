@@ -166,4 +166,5 @@ void RCC_Config_UART();
 void RCC_Enable_AFIO(void);
 void RCC_Enable_ADC1();
 void RCC_Enable_TIM2();
+void RCC_Enable_UART1();
 #endif

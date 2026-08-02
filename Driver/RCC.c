@@ -67,3 +67,9 @@ void RCC_Enable_ADC1()
 {
 	RCC->APB2ENR.Bits.ADC1EN = 1;
 }
+
+
+void RCC_Enable_UART1()
+{
+	RCC->APB2ENR.Bits.USART1EN = 1;
+}

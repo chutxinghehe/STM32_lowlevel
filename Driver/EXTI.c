@@ -131,3 +131,11 @@ void EXTI_Init(uint16_t GPIO_PIN, GPIO_Typedef* Port, uint8_t type)
 
 
 
+
+
+void EN_NVIC_UART1()
+{
+	NVIC_ISR1 |= (1 << (37 - 32));
+}
+
+
