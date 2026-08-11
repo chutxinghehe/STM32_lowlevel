@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Driver;.\Driver_DIY</IncludePath>
+              <IncludePath>.\Driver;.\Driver_DIY;.\Lib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -493,17 +493,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>DIY</GroupName>
+          <GroupName>Lib</GroupName>
           <Files>
             <File>
-              <FileName>_EXTI.c</FileName>
+              <FileName>ST7789.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Driver_DIY\_EXTI.c</FilePath>
+              <FilePath>.\Lib\ST7789.c</FilePath>
             </File>
             <File>
-              <FileName>_EXTI.h</FileName>
+              <FileName>ST7789.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Driver_DIY\_EXTI.h</FilePath>
+              <FilePath>.\Lib\ST7789.h</FilePath>
             </File>
           </Files>
         </Group>

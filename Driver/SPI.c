@@ -20,10 +20,10 @@ void SPI1_Send(uint8_t data)
 {
 	GPIO_Write(CS_Port, CS_Pin, 0);
 	
-	while (!(SPI1_CR1 & (1 << 1))){}
+	while (!(SPI1_SR & (1 << 1))){}
 	SPI1_DR = data ;
 		
-	while (!(SPI1_CR1 & (1 << 0))){}
+	while (!(SPI1_SR & (1 << 0))){}
 	(void) SPI1_DR;
 		
 //	uint32_t checkDataR = SPI1_DR ;
@@ -31,5 +31,7 @@ void SPI1_Send(uint8_t data)
 //	checkDataR++;	
 	
 	while (SPI1_SR & (1 << 7)){}
+	
+	GPIO_Write (CS_Port, CS_Pin, 1);
 }
 

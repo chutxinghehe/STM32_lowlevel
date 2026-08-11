@@ -470,7 +470,7 @@
   </Group>
 
   <Group>
-    <GroupName>DIY</GroupName>
+    <GroupName>Lib</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
@@ -482,8 +482,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Driver_DIY\_EXTI.c</PathWithFileName>
-      <FilenameWithoutPath>_EXTI.c</FilenameWithoutPath>
+      <PathWithFileName>.\Lib\ST7789.c</PathWithFileName>
+      <FilenameWithoutPath>ST7789.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -494,8 +494,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Driver_DIY\_EXTI.h</PathWithFileName>
-      <FilenameWithoutPath>_EXTI.h</FilenameWithoutPath>
+      <PathWithFileName>.\Lib\ST7789.h</PathWithFileName>
+      <FilenameWithoutPath>ST7789.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

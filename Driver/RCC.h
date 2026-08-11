@@ -9,21 +9,21 @@ typedef struct {
 		struct {
 			uint32_t HSION		: 1;
 			uint32_t HSIRDY		: 1;
-			uint32_t res1			: 1;
+			uint32_t res1		: 1;
 			uint32_t HSITRIM	: 5;
 			uint32_t HSICAL		: 8;
 			uint32_t HSEON		: 1;
 			uint32_t HSERDY		: 1;
 			uint32_t HSEBYP		: 1;
 			uint32_t CSSON		: 1;
-			uint32_t res2			: 4;
+			uint32_t res2		: 4;
 			uint32_t PLLON		: 1;
 			uint32_t PLLRDY		: 1;
 			uint32_t PLL2ON		: 1;
 			uint32_t PLL2RDY	: 1;
 			uint32_t PLL3ON		: 1;
 			uint32_t PLL3RDY	: 1;
-			uint32_t res3			: 2;
+			uint32_t res3		: 2;
 		}Bits;
 	}CR;	
 	
@@ -34,13 +34,13 @@ typedef struct {
 			uint32_t SW				: 2;
 			uint32_t SWS			: 2;
 			uint32_t HPRE			: 4;
-			uint32_t PPRE1		: 3;
-			uint32_t PPRE2		: 3;
-			uint32_t ADC_PRE	: 2;
-			uint32_t PLLSRC		: 1;
-			uint32_t PLLXTPRE	: 1;
-			uint32_t PLLMUL		: 4;
-			uint32_t OTGFSPRE : 1;
+			uint32_t PPRE1			: 3;
+			uint32_t PPRE2			: 3;
+			uint32_t ADC_PRE		: 2;
+			uint32_t PLLSRC			: 1;
+			uint32_t PLLXTPRE		: 1;
+			uint32_t PLLMUL			: 4;
+			uint32_t OTGFSPRE 		: 1;
 			uint32_t res			: 1;
 			uint32_t MCO			: 4;
 			uint32_t res1			: 4;
@@ -139,11 +139,11 @@ typedef struct {
 typedef union{
 	uint32_t REG;
 	struct{
-		volatile uint32_t LATENCY : 3;
-		volatile uint32_t HLFCYA  : 1;
-		volatile uint32_t PRFTBE  : 1;
-		volatile uint32_t PRFTBS  : 1;
-		volatile uint32_t res			: 26;
+		volatile uint32_t LATENCY 	: 3;
+		volatile uint32_t HLFCYA  	: 1;
+		volatile uint32_t PRFTBE 	: 1;
+		volatile uint32_t PRFTBS  	: 1;
+		volatile uint32_t res		: 26;
 
 	}BITS;
 }FLASH_ACR;
@@ -167,4 +167,6 @@ void RCC_Enable_AFIO(void);
 void RCC_Enable_ADC1();
 void RCC_Enable_TIM2();
 void RCC_Enable_UART1();
+void RCC_Enable_SPI1();
+void RCC_Enable_I2C1();
 #endif

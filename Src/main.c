@@ -1,30 +1,28 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <RCC.h>
-#include <GPIO.h>
-#include <EXTI.h>
-#include <TIME.h>
-#include <ADC.h>
+#include "RCC.h"
+#include "GPIO.h"
+#include "SPI.h"
+#include "TIME.h"
+#include "ST7789.h"
+#include "I2C.h"
 
-uint16_t value ;
 
 int main() 
 {	
+	RCC_Enable_PortB();  
+	RCC_Enable_PortA();  
+	RCC_Enable_SPI1();   
+	RCC_Enable_I2C1();
 	
-    RCC_Enable_PortA();
-//	RCC_Enable_PortC();
-	RCC_Enable_TIM2();
-	RCC_Enable_ADC1();
-	
-    
-	GPIO_Config(GPIOA, GPIO_PIN_0,  GPIO_Mode_Input_Analog);
+	I2C_Init_Master();
 
-	
-	ADC01_CH0_Init();
-	
 	while (1)
 	{
-		value = ADC01_CH0_Read();
-		
+		I2C_Start();
+		I2C_Send_Address(0x11, 0);
+		I2C_Send_Data(0x22);
+		I2C_Stop();
+		delay_ms(50);
 	}
 }

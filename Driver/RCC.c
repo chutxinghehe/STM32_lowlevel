@@ -73,3 +73,15 @@ void RCC_Enable_UART1()
 {
 	RCC->APB2ENR.Bits.USART1EN = 1;
 }
+
+
+void RCC_Enable_SPI1()
+{
+	RCC->APB2ENR.Bits.SPI1EN = 1;
+}
+
+
+void RCC_Enable_I2C1()
+{
+	RCC->APB1ENR.REG |= (1 << 21);
+}
