@@ -10,12 +10,14 @@
 
 
 //--------------------------------------------------
+// SPI Hardware Pins Configuration
+// Note: CS (Chip Select) is NOT defined here
+// Each SPI device (LCD, SD Card, etc.) should manage its own CS pin
+//--------------------------------------------------
 #define 	MISO_Port		GPIOA	
 #define 	MISO_Pin		GPIO_PIN_6
 #define		MOSI_Port		GPIOA
 #define 	MOSI_Pin		GPIO_PIN_7
-#define 	CS_Port			GPIOA
-#define 	CS_Pin			GPIO_PIN_4
 #define 	SCK_Port		GPIOA	
 #define 	SCK_Pin			GPIO_PIN_5	
 

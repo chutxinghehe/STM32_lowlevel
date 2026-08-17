@@ -14,15 +14,18 @@ int main()
 	RCC_Enable_PortA();  
 	RCC_Enable_SPI1();   
 	RCC_Enable_I2C1();
+	RCC_Enable_TIM2();
 	
-	I2C_Init_Master();
+	SPI1_Init_Master();
 
+	initTFT();
+	
+	
 	while (1)
 	{
-		I2C_Start();
-		I2C_Send_Address(0x11, 0);
-		I2C_Send_Data(0x22);
-		I2C_Stop();
-		delay_ms(50);
+		fullDisplay(COLOR_MAGENTA);
+		delay_ms(500);
+		drawChar(40, 50, 'c', Font_7x10, COLOR_BLACK, COLOR_WHITE);
+		drawString(10, 10, "chutxinh", Font_7x10, COLOR_BLUE, COLOR_RED);
 	}
 }

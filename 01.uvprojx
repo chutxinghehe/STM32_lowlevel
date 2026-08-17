@@ -505,6 +505,16 @@
               <FileType>5</FileType>
               <FilePath>.\Lib\ST7789.h</FilePath>
             </File>
+            <File>
+              <FileName>Font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\Font.c</FilePath>
+            </File>
+            <File>
+              <FileName>Font.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\Font.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
