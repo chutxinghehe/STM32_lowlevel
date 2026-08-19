@@ -515,6 +515,16 @@
               <FileType>5</FileType>
               <FilePath>.\Lib\Font.h</FilePath>
             </File>
+            <File>
+              <FileName>DS3231.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\DS3231.c</FilePath>
+            </File>
+            <File>
+              <FileName>DS3231.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\DS3231.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

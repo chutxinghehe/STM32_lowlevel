@@ -37,9 +37,21 @@ uint8_t I2C_Send_Address(uint8_t address, uint8_t rw)
 	I2C1_DR = (address << 1) | (rw & 0x01);
 	
 	// read SR1 then read SR2 after ADDR is set
-	while (!(I2C1_SR1 & (1 << 1))){}
+	while (!(I2C1_SR1 & (1 << 1)))
+	{
+		// error AF
+		if ((I2C1_SR1) & (1 << 10))
+		{
+			I2C1_SR1 &= ~(1 << 10);
+			I2C_Stop();
+			return 1;
+		}	
+	}
 	(void) I2C1_SR1;
 	(void) I2C1_SR2;
+	
+		
+	
 	
 	return 0;
 }
