@@ -16,10 +16,12 @@ void TIM2_IRQHandler()
 {
 	if(TIM2_SR & 0x01){
 		//====== doing sth =========//
+		
 		if (blink_state == 0)
 		{
 			blink_state = 1;
 		}
+		
 		else
 		{
 			blink_state = 0;

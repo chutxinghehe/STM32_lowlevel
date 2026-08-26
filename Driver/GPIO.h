@@ -19,6 +19,7 @@
 #define GPIO_PIN_14		((uint16_t) 0x4000)
 #define GPIO_PIN_15		((uint16_t) 0x8000)
 
+
 #define GPIO_Mode_Input_Floating		0x00	
 #define GPIO_Mode_Output_PP				0x01	
 #define GPIO_Mode_Output_OD				0x02
@@ -27,6 +28,7 @@
 #define GPIO_Mode_Input_Analog			0x05
 #define GPIO_Mode_Input_PU				0x06
 #define GPIO_Mode_Input_PD				0x07
+
 
 #define GPIOA  (volatile GPIO_Typedef*)(0x40010800UL)
 #define GPIOB  (volatile GPIO_Typedef*)(0x40010C00UL)

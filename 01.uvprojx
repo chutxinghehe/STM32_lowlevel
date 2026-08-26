@@ -490,6 +490,16 @@
               <FileType>5</FileType>
               <FilePath>.\Driver\SPI.h</FilePath>
             </File>
+            <File>
+              <FileName>USB.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Driver\USB.c</FilePath>
+            </File>
+            <File>
+              <FileName>USB.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Driver\USB.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

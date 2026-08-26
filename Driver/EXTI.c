@@ -131,7 +131,10 @@ void EXTI_Init(uint16_t GPIO_PIN, GPIO_Typedef* Port, uint8_t type)
 
 
 
-
+void EN_NVIC_USB()
+{
+	NVIC_ISR0 |= (1 << 0);
+}
 
 void EN_NVIC_UART1()
 {

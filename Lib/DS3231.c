@@ -33,11 +33,11 @@ void set_time(uint8_t hour, uint8_t min, uint8_t sec)
 void get_time(uint8_t *hour, uint8_t *min, uint8_t *sec)
 {
 	I2C_Start();
-	I2C_Send_Address(DS3231_Address, 1);
+	I2C_Send_Address(DS3231_Address, 0);
 	I2C_Send_Data(0x00);
 	
 	I2C_Start();
-	I2C_Send_Address(DS3231_Address, 0);
+	I2C_Send_Address(DS3231_Address, 1);
 	
 	*sec = bcd_to_dec(I2C_Read_Data(1));
 	*min = bcd_to_dec(I2C_Read_Data(1));
