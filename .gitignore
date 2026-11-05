@@ -26,8 +26,27 @@
 *.browse
 *.pbi-browser
 
+# Keil build outputs
+Objects/
+Listings/
+
+# Keil user-specific settings
+*.uvoptx
+*.uvguix.*
+*.uvgui.*
+
+# Temporary files
+*.bak
+*.tmp
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
 # Keil project local settings
 Mappings/
 Listings/
 Objects/
 RTE/
+
